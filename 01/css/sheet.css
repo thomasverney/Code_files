@@ -1,0 +1,21 @@
+body {
+	font-family: 'Space Mono', monospace;
+	background-color: blue;
+   	background-image: url("img/tr-blue.png");
+   	background-position: right left; /*Positioning*/
+   	background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+
+div#principal {
+    color: grey;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+div#bodydiv {
+
+
+}

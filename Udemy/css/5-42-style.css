@@ -1,0 +1,43 @@
+/** {
+	margin: 0px;
+	padding: 0px;
+}*/
+body {
+	background: #8EE9C8;
+/*	background: url(https://feltzineblog.files.wordpress.com/2018/06/hm.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	font-family: 'Space Mono', Monospace;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+h1 {color: #B9CBD1;
+	background-color: #BFF1FF;
+	border: 5px dotted #FF8181;
+/*	border-color: #4BAFDD;
+	border-width: 5px;
+	border-style: dotted;*/
+}
+
+h4 { color: #9FBBE1;
+	font-style: italic;
+	background-color: #E2DA38;
+}
+
+li {
+	color: #AC3078;
+	list-style-type: none;
+	list-style: lower-armenian;
+}
+
+.nav {
+	font-weight: lighter;
+	background-color: #69FF99;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 50%;
+	height: 100%;
+}

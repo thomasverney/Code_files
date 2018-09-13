@@ -1,0 +1,17 @@
+body {
+	font-family: monospace;
+}
+
+li	{
+	border: 2px red solid;
+}
+
+#unique {
+	color: #7272DC;
+	font-family: cursive;
+	background-color: #D08080;
+}
+
+.highlight {
+	text-decoration: wavy underline overline;
+}
