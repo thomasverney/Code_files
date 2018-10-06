@@ -10,12 +10,12 @@ div#principal {
     color: grey;
     margin: auto;
     width: 50%;
-    border: 3px solid green;
+    border: 3px solid rgb(74, 161, 74);
     padding: 10px;
     text-align: center;
 }
 
 div#bodydiv {
 
-
+color: aqua;
 }
