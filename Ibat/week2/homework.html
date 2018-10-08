@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aqua;
+            background: #272c3b;
+        }
+        #demo {
+            font-style: italic;
+        }
+
+        /* h3 {
+            opacity: .1;
+        } */
+
+
+    </style>
+</head>
+<body>
+    
+<div>
+    <h1>
+        Hello
+    </h1>
+    <h3>
+        supercodex!
+    </h3>
+
+    <p>The following phrase will be randomly generated based on 6 possible combinations each time you refresh the page:</p>
+    <p id="demo"></p>
+
+</div>
+
+    <script>
+        // Declaring the arrays:
+        var numbers = ["007", 28, 14, 1987, 31, 1949];
+        var names = ["James Bond", "Kriz\'s age", "Day of the month I was born", "My birth year", "My age", "Papa\'s Birth year"];
+
+        // Creating a variable that will fetch a random element for each of these arrays:
+        var randomnumber = numbers[Math.floor(Math.random() * (numbers.length))];
+        var randomname = names[Math.floor(Math.random() * (names.length))];
+
+        // Testing it with console.log:
+        console.log(randomnumber);
+        console.log(randomname);
+
+
+        var surprisenumber = Math.floor(Math.random() * 6);
+
+        console.log(names[1] + " is " + numbers[1] +".")
+        console.log(names[surprisenumber] + " is " + numbers[surprisenumber] +".")
+
+        document.getElementById("demo").innerHTML = names[surprisenumber] + " is " + numbers[surprisenumber] + ".";
+    </script>
+</body>
+</html>
+
+
