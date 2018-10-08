@@ -16,9 +16,14 @@
             font-style: italic;
         }
 
-        /* h3 {
-            opacity: .1;
-        } */
+        h3{
+            text-align: right;
+            color:rgb(118, 255, 244, 0.05);
+        }
+        p{
+
+            color:rgb(118, 255, 244);
+        }
 
 
     </style>
@@ -29,8 +34,8 @@
     <h1>
         Hello
     </h1>
-    <h3>
-        supercodex!
+    <h3 id="jeje">
+        .supercodex!
     </h3>
 
     <p>The following phrase will be randomly generated based on 6 possible combinations each time you refresh the page:</p>
@@ -41,9 +46,10 @@
     <script>
         // Declaring the arrays:
         var numbers = ["007", 28, 14, 1987, 31, 1949];
-        var names = ["James Bond", "Kriz\'s age", "Day of the month I was born", "My birth year", "My age", "Papa\'s Birth year"];
+        var names = ["James Bond", "Kriz\'s age", "The day of the month I was born", "My birth year", "My age", "Dad\'s birth year"];
 
-        // Creating a variable that will fetch a random element for each of these arrays:
+        // Creating a variable that will fetch a random element within the range of the array's length. First, declaring the variable and giving it a name (e.g. randomnumber). Then, using the array's index (e.g. "numbers[2]"), but instead of indicating a number, use Math.random() with the length of the array as a range. Math.floor's job is to round up the number to the lowest integer. So ex. 0.4651 becomes 0.
+        // Here, we define randomnumber as being
         var randomnumber = numbers[Math.floor(Math.random() * (numbers.length))];
         var randomname = names[Math.floor(Math.random() * (names.length))];
 
@@ -51,12 +57,16 @@
         console.log(randomnumber);
         console.log(randomname);
 
+        // Here, I'm doing the same thing than I did above to fetch a random element, but instead of just getting the element, I'm getting a random number within the range of the array's length. So if the array has 6 elements, it will be any number between 0 and 5. This is because the last number of the range is not included, as detailed on the js random page of W3C: "Math.floor(Math.random() * 10); => returns a random integer from 0 to 9". I'm not sure why though.
+        var surprisenumber = Math.floor(Math.random() * numbers.length);
 
-        var surprisenumber = Math.floor(Math.random() * 6);
-
+        // I'm testing building a sentence with the array's index numbers and printing it out:
         console.log(names[1] + " is " + numbers[1] +".")
+
+        // Cool, it works! So now, I'm trying to build a sentence with surprisenumber as an index number, so that the name an the number will always match:
         console.log(names[surprisenumber] + " is " + numbers[surprisenumber] +".")
 
+        // Let's write it in a <p> tag on our document now. Not sure how exactly document works yet, so I copied what I saw for other examples on W3C. Looks like the method getElementById is fetching the corresponding element with the same id in the html doc, so I id'd a p with "demo". Then, apparently "innerHTML" is what actually writes the object within "demo", but I'm not sure it's exactly this yet. Anyway, it works:
         document.getElementById("demo").innerHTML = names[surprisenumber] + " is " + numbers[surprisenumber] + ".";
     </script>
 </body>
