@@ -33,12 +33,12 @@
 
 
 
-    var question = prompt("What\'s your question?", "Is life meaningful?");
+    var question = prompt("What\'s your Yes/No question?", "Is life meaningful?");
 
     if (question == null || question == "") {
-            txt = "Ok, no question.";
+            txt = "Ok, no question then.";
         } else {
-            txt = responses[1];
+            txt =  responses[Math.floor(Math.random() * responses.length)];
         }
 
     alert(txt);
