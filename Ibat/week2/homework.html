@@ -32,7 +32,7 @@
     
 <div>
     <h1>
-        Hello
+        .
     </h1>
     <h3 id="jeje">
         .supercodex!
@@ -67,7 +67,11 @@
         console.log(names[surprisenumber] + " is " + numbers[surprisenumber] +".")
 
         // Let's write it in a <p> tag on our document now. Not sure how exactly document works yet, so I copied what I saw for other examples on W3C. Looks like the method getElementById is fetching the corresponding element with the same id in the html doc, so I id'd a p with "demo". Then, apparently "innerHTML" is what actually writes the object within "demo", but I'm not sure it's exactly this yet. Anyway, it works:
-        document.getElementById("demo").innerHTML = names[surprisenumber] + " is " + numbers[surprisenumber] + ".";
+        var sentence = document.getElementById("demo").innerHTML = names[surprisenumber] + " is " + numbers[surprisenumber] + ".";
+
+        document.write ("<p>"+ sentence +"</p>");
+
+
     </script>
 </body>
 </html>
