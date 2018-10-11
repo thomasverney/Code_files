@@ -26,11 +26,57 @@
         
                 color: rgb(118, 255, 244);
             }
+
+
         </style>
 </head>
 <body>
     <script>
-    var responses = ["It is certain.", 
+    // var responses = ["It is certain.", 
+    //     "It is decidedly so.", 
+    //     "Without a doubt.", 
+    //     "Yes - definitely.", 
+    //     "You may rely on it.", 
+    //     "As I see it, yes.", 
+    //     "Most likely.",
+    //     "Outlook good.",
+    //     "Yes.",
+    //     "Signs point to yes.",
+    //     "Reply hazy, try again",
+    //     "Ask again later.",
+    //     "Better not tell you now.",
+    //     "Cannot predict now.",
+    //     "Concentrate and ask again.",
+    //     "Don\'t count on it.",
+    //     "My reply is no.",
+    //     "My sources say no.",
+    //     "Outlook not so good.",
+    //     "Very doubtful"]
+
+
+
+    // var question = prompt("What\'s your Yes/No question?", "Is life meaningful?");
+
+    // if (question == null || question == "") {
+    //         txt = "Ok, no question then.";
+    //     } else {
+    //         txt =  responses[Math.floor(Math.random() * responses.length)];
+    //     }
+
+    // alert(txt);
+
+function makePrediction() {
+    var prediction = getPrediction();
+
+    var htmlElement = document.getElementById("messagePanel") ;
+    htmlElement.innerHTML = prediction
+
+}
+
+
+            function getPrediction() {
+
+    var prediction = ["It is certain.", 
         "It is decidedly so.", 
         "Without a doubt.", 
         "Yes - definitely.", 
@@ -49,20 +95,23 @@
         "My reply is no.",
         "My sources say no.",
         "Outlook not so good.",
-        "Very doubtful"]
+        "Very doubtful"];
 
+var randomAnswer = Math.floor(Math.random() * prediction.length);
+return prediction[randomAnswer];
+            }
 
-
-    var question = prompt("What\'s your Yes/No question?", "Is life meaningful?");
-
-    if (question == null || question == "") {
-            txt = "Ok, no question then.";
-        } else {
-            txt =  responses[Math.floor(Math.random() * responses.length)];
-        }
-
-    alert(txt);
     
     </script>
+<h1>Prediction</h1>
+
+    <button onclick="makePrediction()">CLick me</button>
+
+
+        <div id="messagePanel">
+            
+        </div>
+
+
 </body>
 </html>

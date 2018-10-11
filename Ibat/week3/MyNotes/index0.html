@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+
+
+    <script>
+    
+    function clickMe {
+        console.log ("I am a button click");
+    }
+
+        var colors = ["Red", "Blue", "Green", "Yellow"];
+
+    function colorsfunc() {
+         //Initialise in one step
+        var dwarves = ["Sleepy", "Bashful", "Happy", "Doc"];
+
+        //add extra by pushing
+        dwarves.push("Sneezy");
+        dwarves.push("Dopey");
+        dwarves.push("Grumpy");
+
+        var countDwarves = dwarves.length;
+        for (i = 0; i < countDwarves; i++) { //start of statement block
+            console.log("Dwarf %d is called %s", i, dwarves[i]);
+            //shorthand for currentStep = currentStep =1
+        }//end of statement block
+        
+    }
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Button Demo</h1>
+
+    <button onclick="clickMe()">Click Me</button>
+
+    <button onclick="colorsfunc()">Button 2</button>
+
+</body>
+</html>
