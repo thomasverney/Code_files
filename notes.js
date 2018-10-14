@@ -37,6 +37,12 @@ console.log(str);
 // expected output: "012345678"
 // What it does is: "var i = 0" is the initial statement. Then, we indicate the condition, which is "i < 9". So as long as i is inferior to 9, the loop will keep running. Then, the "final - expression" is i++. It's like the result.
 
+// creating an empty object:
+var exemple = {}; //creates **a new empty object**
+
+// Explaining functions:
+https://www.youtube.com/watch?v=N8ap4k_1QEQ
+
 
 /*
 Misc ideas:

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    // formula is wieght in kg / height in meter / height in meter
+    // example 70 / 1.75 / 1.75 = 22.86
+    
+
+    
+    function bmiCalculator() {
+
+        let weight = document.getElementById("weightinput").value;
+        let height = document.getElementById("heightinput").value;
+        console.log (weight / height / height);
+        return (weight / height / height);
+
+    }
+    
+
+    
+
+
+    </script>
+</head>
+<body>
+    <h1>bmi</h1>
+
+    <input type="text" placeholder="Weight" id="weightinput">
+    <br>
+    <input type="text" placeholder="Height" id="heightinput">
+    <br>
+    <button onclick="bmiCalculator()">Calculate BMI</button>
+
+    <div id="divbmi"></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<script>
+
+console.log("Function Demo Pers")
+
+function goMagasin(objet) {
+    console.log("=======");
+    console.log("Sors du batiment");
+    console.log("Va dehors");
+    console.log("Tourne à gauche");
+    console.log("Marche 200m");
+    console.log("Rentre dans le magasin et achète %s", objet);
+
+    costofObjet = getPrix(objet);
+    return costofObjet;
+
+}
+
+function allerMagasinRamenerObjet(objet) {
+    console.log("=======");
+    console.log("Sors du batiment");
+    console.log("Va dehors");
+    console.log("Tourne à gauche");
+    console.log("Marche 200m");
+    console.log("Rentre dans le magasin et achète %s", objet)
+
+    costofObjet = getPrix(objet);
+
+let shopObject = {};
+shopObject.cost = costofObjet;
+shopObject.item = objet;
+shopObject.change = tunedonnee - costofObjet;
+
+return shopObject;
+}
+
+function getPrix(objet) {
+
+    tunedonnee=75;
+    if (objet=="Cigar") costofObjet = 10;
+    if (objet=="Whiskey") costofObjet = 26;
+    if (objet=="Crips") costofObjet = 3;
+    if (objet=="Gaviscon") costofObjet = 5;
+
+    return costofObjet;
+}
+let objetachete = allerMagasinRamenerObjet("Whiskey");
+console.log("****** Objet acheté est, %s, %d, %d",
+
+
+objetachete.item,
+objetachete.cost,
+objetachete.change);
+
+let prixObjet1 = goMagasin("Whiskey");
+// let monnaie = tunedonnee - prixObjet1;
+console.log("Le prix était %d",prixObjet1);
+// console.log("La monnaie était ", monnaie.toString());
+let prixObjet2 = goMagasin("Cigar");
+// let monnaie = tunedonnee - prixObjet2;
+console.log("Le prix était %d",prixObjet2);
+// console.log("La monnaie était ", monnaie.toString());
+let prixObjet3 = goMagasin("Crisps");
+// let monnaie = tunedonnee - prixObjet3;
+console.log("Le prix était %d",prixObjet3);
+// console.log("La monnaie était ", monnaie.toString());
+let prixObjet4 = goMagasin("Gaviscon");
+// let monnaie = tunedonnee - prixObjet4;
+console.log("Le prix était %d",prixObjet4);
+// console.log("La monnaie était ", monnaie.toString());
+
+function direBjr(name, LastName) {
+    console.log("Hello "+ name + " " + lastName);
+}
+
+direBjr("José", "LeGentil");
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+<h1>Function Demo Perso</h1>
+</body>
+
+</html>
