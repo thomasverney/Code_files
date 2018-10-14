@@ -11,16 +11,16 @@
     
 
     
-    function bmiCalculator() {
+ function bmiCalculator() {
 
         let weight = document.getElementById("weightinput").value;
         let height = document.getElementById("heightinput").value;
         return (weight / height / height);
-
     }
-    
+            // let bmi = bmiCalculator();
+            // document.getElementById("pbmi").innerHtml = bmi;
 
-    
+
 
 
     </script>
@@ -33,7 +33,7 @@
     <input type="text" placeholder="Height" id="heightinput">
     <br>
     <button onclick="bmiCalculator()">Calculate BMI</button>
-
-    <div id="divbmi"></div>
+    <br>
+    <p id="pbmi"></p>
 </body>
 </html>
