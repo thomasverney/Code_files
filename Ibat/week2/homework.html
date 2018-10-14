@@ -57,6 +57,11 @@
         console.log(randomnumber);
         console.log(randomname);
 
+        // function version
+        function lol {
+            console.log(randomnumber);
+        }
+
         // Here, I'm doing the same thing than I did above to fetch a random element, but instead of just getting the element, I'm getting a random number within the range of the array's length. So if the array has 6 elements, it will be any number between 0 and 5. This is because the last number of the range is not included, as detailed on the js random page of W3C: "Math.floor(Math.random() * 10); => returns a random integer from 0 to 9". I'm not sure why though.
         var surprisenumber = Math.floor(Math.random() * numbers.length);
 
