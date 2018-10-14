@@ -108,10 +108,18 @@ return prediction[randomAnswer];
     <button onclick="makePrediction()">CLick me</button>
 
 
+<<<<<<< HEAD
         <div id="messagePanel">
             
         </div>
 
+=======
+    if (question === null || question === "") {
+            txt = "Ok, no question then.";
+        } else {
+            txt =  responses[Math.floor(Math.random() * responses.length)];
+        }
+>>>>>>> ea9bfabc2372654e166021a87fefb8f9e5c948e2
 
 </body>
 </html>
