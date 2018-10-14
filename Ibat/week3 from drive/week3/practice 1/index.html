@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        function demoFunc1() {
+            console.log("Hello");
+        }
+        // function demoFunc2() {
+        //     let createparagraph = document.createElement("p");
+        //     let createtext = document.createTextNode("Salut !");
+        //     createparagraph.appendChild(createtext);
+
+        //     // document.getElementById("divvv").appendChild(createparagraph);
+
+        //     let getit = document.getElementById("divvv");
+        //     getit.appendChild(createparagraph);
+        // }
+
+
+        // function demoFunc3() {
+        //     let listCars = ["Volvo", "Renault", "Peugeot", "Toyota", "Mercedes-Benz", "Toyota", "BMW", "Volkswagen", "Honda", "Nissan", "Porsche", "Ford", "Audi", "Chevrolet", "Renault", "Land Rover", "Hyundai Motor Company", "Lexus", "Subaru", "Haval", "Ferrari", "Geely", "Tesla Motors", "Kia Motors", "Suzuki", "Isuzu", "Daihatsu", "Aston Martin", "Volvo", "Mazda", "MAN", "BYD", "MINI", "Maruti Suzuki", "Jaguar", "Fiat", "Polaris Industries", "Peugeot", "Jeep", "Harley-Davidson", "Buick", "Bentley", "Scania", "GMC", "Mahindra", "Hino", "Lincoln", "Cadillac", "Acura", "Smart", "Tata Motors", "Baojun", "Bajaj Auto", "JAC"];
+
+
+        //     let createparagraph = document.createElement("p");
+        //     let createtext = document.createTextNode(listCars[
+
+        //     Math.floor(Math.random() * listCars.length)
+
+        //     ]);
+        //     createparagraph.appendChild(createtext);
+
+        //     // document.getElementById("divvv").appendChild(createparagraph);
+
+        //     let getit = document.getElementById("divvv");
+        //     getit.appendChild(createparagraph);
+        // }
+
+        // function demoFunc4() {
+        //     let listCars = ["Volvo", "Renault", "Peugeot", "Toyota", "Mercedes-Benz", "Toyota", "BMW", "Volkswagen", "Honda", "Nissan", "Porsche", "Ford", "Audi", "Chevrolet", "Renault", "Land Rover", "Hyundai Motor Company", "Lexus", "Subaru", "Haval", "Ferrari", "Geely", "Tesla Motors", "Kia Motors", "Suzuki", "Isuzu", "Daihatsu", "Aston Martin", "Volvo", "Mazda", "MAN", "BYD", "MINI", "Maruti Suzuki", "Jaguar", "Fiat", "Polaris Industries", "Peugeot", "Jeep", "Harley-Davidson", "Buick", "Bentley", "Scania", "GMC", "Mahindra", "Hino", "Lincoln", "Cadillac", "Acura", "Smart", "Tata Motors", "Baojun", "Bajaj Auto", "JAC"]; 
+
+        //     // console.log ("There are " + listCars.length + " car brands here.");
+
+        //     let createparagraph = document.createElement("p");
+        //     let createtext = document.createTextNode("There are " + listCars.length + " car brands here.");
+        //     createparagraph.appendChild(createtext);
+
+        //     // document.getElementById("divvv").appendChild(createparagraph);
+
+        //     let getit = document.getElementById("divvv");
+        //     getit.appendChild(createparagraph.appendChild(createtext));
+        // }
+
+
+                let listCars = ["Volvo", "Renault", "Peugeot", "Toyota", "Mercedes-Benz", "Toyota", "BMW", "Volkswagen", "Honda", "Nissan", "Porsche", "Ford", "Audi", "Chevrolet", "Renault", "Land Rover", "Hyundai Motor Company", "Lexus", "Subaru", "Haval", "Ferrari", "Geely", "Tesla Motors", "Kia Motors", "Suzuki", "Isuzu", "Daihatsu", "Aston Martin", "Volvo", "Mazda", "MAN", "BYD", "MINI", "Maruti Suzuki", "Jaguar", "Fiat", "Polaris Industries", "Peugeot", "Jeep", "Harley-Davidson", "Buick", "Bentley", "Scania", "GMC", "Mahindra", "Hino", "Lincoln", "Cadillac", "Acura", "Smart", "Tata Motors", "Baojun", "Bajaj Auto", "JAC"];
+
+                
+                
+
+            
+              
+                    function demoFunc4() {
+
+                        for (let i = 0; i < listCars.length; i++) {
+                              let createparagraph = document.createElement("p");
+                            let countCars = listCars.length;
+
+
+                            let createtext = document.createTextNode("Voici un exemple de marque de voiture : " + listCars[i]);
+                            createparagraph.appendChild(createtext);
+                            let getit = document.getElementById("divvv");
+                            getit.appendChild(createparagraph);         
+                            
+                        }
+                        let yo = [105,106];
+                        console.log("This is a sentence %d", yo[1]);        
+
+                    }
+                                    
+
+                
+                
+
+                
+                
+                
+                
+                
+
+                // document.getElementById("divvv").appendChild(createparagraph);
+
+
+            
+        
+
+    </script>
+</head>
+<body>
+    <h1>Button Demo</h1>
+
+    <button onclick="demoFunc1()">Clique-moi 1</button> <br/>
+    <button onclick="demoFunc2()">Clique-moi 2</button> <br/>
+    <button onclick="demoFunc3()">Clique-moi 3</button> <br/>
+    <button onclick="demoFunc4()">Clique-moi 4</button> <br/>
+
+    <div id="divvv"></div>
+
+
+</body>
+</html>
