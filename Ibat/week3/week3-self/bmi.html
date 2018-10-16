@@ -5,35 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-    // formula is wieght in kg / height in meter / height in meter
-    // example 70 / 1.75 / 1.75 = 22.86
-    
-
-    
- function bmiCalculator() {
-
-        let weight = document.getElementById("weightinput").value;
-        let height = document.getElementById("heightinput").value;
-        return (weight / height / height);
-    }
-            // let bmi = bmiCalculator();
-            // document.getElementById("pbmi").innerHtml = bmi;
+ 
 
 
+ 
+ <script>
 
+// formula is wieght in kg / height in meter / height in meter
+// example 70 / 1.75 / 1.75 = 22.86
 
-    </script>
+                function bmiCalculator() {
+                let weight = document.getElementById("weightinput").value;
+                let height = document.getElementById("heightinput").value;
+                // console.log(weight / (height / 100) / (height / 100));
+                let result = weight / (height / 100) / (height / 100);
+                console.log(result);
+                }
+                // bmiCalculator();
+                
+                // document.getElementById("pbmi").innerHtml = bmiCalculator();
+                
+</script>
+
 </head>
 <body>
     <h1>bmi</h1>
 
-    <input type="text" placeholder="Weight" id="weightinput">
+    <input type="text" placeholder="Weight in kg" id="weightinput">
     <br>
-    <input type="text" placeholder="Height" id="heightinput">
+    <input type="text" placeholder="Height in cm" id="heightinput">
     <br>
     <button onclick="bmiCalculator()">Calculate BMI</button>
     <br>
     <p id="pbmi"></p>
+
+
+
+
+
+
+
+
 </body>
 </html>
