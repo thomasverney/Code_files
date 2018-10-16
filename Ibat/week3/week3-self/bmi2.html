@@ -30,7 +30,9 @@
         
         console.log(bmi);
 
-        document.getElementById("pbmi").innerHtml = bmi;
+        let printinP = document.getElementById("pbmi");
+
+        printinP.innerHTML = Math.round(bmi * 100) / 100;
     }
             // let bmi = bmiCalculator();
             // document.getElementById("pbmi").innerHtml = bmi;
@@ -43,9 +45,9 @@
 <body>
     <h1>bmi</h1>
 
-    <input type="text" placeholder="Weight" id="weightinput">
+    <input type="text" placeholder="Weight in kg" id="weightinput">
     <br>
-    <input type="text" placeholder="Height" id="heightinput">
+    <input type="text" placeholder="Height in cm" id="heightinput">
     <br>
     <button onclick="bmiCalculator()">Calculate BMI</button>
     <br>
