@@ -44,6 +44,37 @@ var exemple = {}; //creates **a new empty object**
 https://www.youtube.com/watch?v=N8ap4k_1QEQ
 
 
+// Objects:
+// They are like arrays with pairs of keys and values for a given object, here a car. You can access them as below. Object.values() will return all values, while Object.keys() does the same thing for keys.
+// When to Use Arrays.When to use Objects.
+// JavaScript does not support associative arrays.
+// You should use objects when you want the element names to be strings(text).
+// You should use arrays when you want the element names to be numbers.
+let car = {
+    name: "fiat500", weight: "850kg", color: "white", fullDesc: function () {
+        return "the car is a " + this.name + " it weighs " + this.weight + " and it is " + this.color + ".";
+    }
+};
+
+console.log(Object.values(car));
+console.log(car.name);
+console.log(car.fullDesc());
+
+// "New" operator:
+// Info: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
+// If you already have an object with different properties for a given case, you can add a new one within this object with new.
+function Car(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+}
+
+var car1 = new Car('Eagle', 'Talon TSi', 1993);
+
+var car2 = new Car('Peugoet', '205', 1996);
+
+
+
 /*
 Misc ideas:
 
