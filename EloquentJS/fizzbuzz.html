@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fizz BUzz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+        // My version:        
+        // for (let i = 0; i <= 100; i++) {
+        //     let empti = "";
+        //     if (i % 3 == 0 && i % 5 == 0) {
+        //         console.log("FizzBuzz")
+        //     } else if (i % 3 == 0) {
+        //         console.log("Fizz")
+        //     } else if (i % 5 == 0) {
+        //         console.log("Buzz");
+        //     } else console.log(i);
+        // }
+
+
+        // for (let i = 0; i <= 100; i++) {
+        //     let empti = "";
+        //     if (i % 3 == 0) {empti += "Fizz"};
+        //     if (i % 5 == 0) {empti += "Buzz"};
+        //     console.log(empti || i);
+        // }
+
+
+        let size = 30;
+
+        let board = "";
+
+        for (let y = 0; y < size; y++) {
+            for (let x = 0; x < size; x++) {
+                if ((x + y) % 2 == 0) {
+                    board += " ";
+                } else {
+                    board += "#";
+                }
+            }
+            board += "\n";
+        }
+
+        console.log(board);
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
