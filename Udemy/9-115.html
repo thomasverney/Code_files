@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: orangered;
+            background-color: darkslategray;
+        }
+    </style>
+    <script>
+
+        console.log("All Numbers between -10 and 19:")
+        for (let i = -10; i < 20; i++) {
+            console.log(i);
+        }
+
+        console.log("All even Numbers between 10 and 40:")
+        for (let x = 10; x <= 40; x++) {
+            if (x % 2 === 0) {
+                console.log(x);
+            }
+        }
+
+        console.log("All odd Numbers between 300 and 333:")
+        for (let y = 300; y <= 333; y++) {
+            if (y % 2 !== 0) {
+                console.log(y);
+            }
+        }
+
+        console.log("All Numbers divisible by 55 and 50 between 5 and 50:")
+        for (let y = 5 ; y <= 50; y++) {
+            if (y % 5 == 0 && y % 3 == 0) {
+                console.log(y);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>For loops problem set</h1>
+    <p id="paragraph"></p>
+</body>
+
+</html>

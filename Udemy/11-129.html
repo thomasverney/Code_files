@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+            color: peachpuff;
+            /* margin: 0%; */
+        }
+
+        body {
+            background-color: royalblue;
+            margin: 0;
+        }
+
+        .main {
+            width: 50%;
+            margin: auto;
+            /* border: solid white 1px; */
+            background-color: rgb(96, 128, 224);
+            height: 1080px;
+        }
+
+        h1 {
+            margin: auto;
+            /* border: solid white 1px; */
+        }
+        button {
+            background-color: royalblue;
+            border: solid 1px rgb(53, 87, 187);
+        }
+    </style>
+    <script>
+
+        let friends = ["liz", "bobby", "michael", "jose"];
+
+        let num;
+
+        function printFriendByID(num) {
+            num = prompt("Give me a number between 0 and 3");
+            if (num <= 3 || num == NaN) document.getElementById("friends").innerHTML = friends[num];
+            else document.getElementById("friends").innerHTML = "Just a number. Between 0 and 3. Come on.";
+        }
+        
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>Salut !</h1>
+        <p>Random!</p>
+        <button onclick="printFriendByID(num)">Hello</button>
+
+        <p id="friends"></p>
+
+    </div>
+</body>
+
+</html>
