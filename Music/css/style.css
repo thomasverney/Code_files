@@ -19,7 +19,7 @@ a:hover { color: rgb(233, 233, 233); }
   width: 300px;
 
   margin: 10px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   position: absolute;
   opacity: .7;
