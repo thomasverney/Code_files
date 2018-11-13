@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        
+    $(function() {
+        console.log("jQuery goodness has loaded");
+        $('#mainHeading').html("jQuery Tutorial is there");
+
+        $('#firstButton').on('click', function () {
+
+            $('#mainHeading').html("");
+
+        }) //end #firstButton
+
+        $('.btn').on('click', function () {
+            var id = $(this).prop("id");
+            var fruit = $(this).data("fruit");
+
+            console.log("Message from button %s for %s", id, fruit);
+        })
+
+        
+    }); // end loading journey
+    </script>
+</head>
+<body>
+    <h1 id="mainHeading"></h1>
+    <button id="firstButton">Clear Heading</button>
+
+<button id="btnApples" data-fruit="apples" class="btn">Apples</button>
+<button id="btnOranges" data-fruit="oranges" class="btn">Oranges</button>
+<button id="btnPears" data-fruit="pears" class="btn">Pears</button>
+    
+
+
+</body>
+</html>
